@@ -7,6 +7,7 @@
 - name: Ensure Pip is latest.
   pip:
     name: "pip"
+    executable: "{{ pip_executable }}"
     state: latest
     
 - name: Ensure pip_install_packages are installed.
